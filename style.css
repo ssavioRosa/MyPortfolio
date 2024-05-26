@@ -1,0 +1,860 @@
+/* Style Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(26, 25, 25);
+    height: 100vh;
+}
+.interface{
+    max-width: 1580px;
+    margin: auto;
+    
+}
+.flex{
+    display: flex;
+    
+}
+.button button{
+    padding: 10px 40%;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #807e83;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.button button:hover{
+    box-shadow: 0px 0px 8px black;
+}
+
+
+/* Style Header */
+
+header{
+    padding: 40px 4%;
+}
+
+header >.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+header a{
+    color: #807e83;
+    text-decoration: none;
+    transition: .2s;
+}
+/* tirar as bolinhas da class NAV */
+header nav  ul{
+    list-style-type: none;
+}
+/* colocar um do lado do outro */
+header nav.menu-desktop-header  ul li{
+    display: inline-block;
+    padding: 0 100px;
+}
+header .menu-desktop-header{
+    justify-content: space-between;
+}
+
+header .nav.menu-desktop-header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    
+}
+
+ 
+   h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+
+ .overlay-menu{
+    background-color: #000000b4;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+ }
+
+
+/* Menu mobile */
+.btn-abrir-menu i{
+    font-size: 40px;
+    color: #807e83;
+}
+
+.menuMobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+    
+}
+
+.menuMobile.abrir-menu{
+    width: 70%;
+}
+
+.menuMobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menuMobile .botaofechar{
+    padding: 20px 4%;
+}
+.menuMobile .botaofechar i{
+    color: #807e83;
+    font-size: 30px;
+    
+}
+.menuMobile nav ul li{
+    text-align: right;
+    margin: 30px 0 0 0;
+   
+}
+
+.menuMobile nav ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 8%;
+    display: block;
+    
+}
+.menuMobile nav ul li a:hover{
+    background-color: #807e83;
+    color: #050505;
+
+}
+
+
+
+.menuMobile{
+    display: none;
+}
+/* Style topo site */
+section .TopodoSite{
+    padding: 40px 4%;
+}
+section .TopodoSite .flex{
+    align-items:center ;
+    justify-content: center;
+}
+
+.TopodoSite h1{
+    color: #fff;
+    font-size: 40px;
+}
+.TopodoSite .textoTopo p{
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.TopodoSite h2{
+    color: #fff;
+    line-height: 40px;
+}
+.TopodoSite h2 span{
+    font-size: 30px;
+    color: #807e83;
+    font-size: 20px;
+}
+.TopodoSite .imagemTopo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out alternate infinite;
+
+
+}
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 40px;
+    }
+    
+}
+
+
+/* Style Sobre */
+
+.Sobre .interface{
+    margin-top: 220px;
+
+}
+.Sobre .flex{
+    display: flex;
+    color: #fff;
+    padding-bottom: 30px; 
+    gap: 40px 4%;
+    
+}
+
+.Sobre .SobreMim-box{
+    padding: 50px ;
+    width: 600px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 10px 0;
+    transition: .2s;
+    height: 550px;
+}
+.Sobre .SobreMim-box i{
+    color: #807e83;
+}
+.Sobre .SobreMim-box h3{
+    text-align: center;
+    padding: 20px 4%;
+    font-size: 35px;
+}
+.Sobre .SobreMim-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #807e83;
+}
+
+.SobreMim-box .sobre{
+    font-size: 24px;
+    margin-top: 20px;
+    
+}
+h4 .subtitulo{
+    font-size: 20px;
+}
+
+h4 span{
+    color: #807e83;
+
+}
+.sobre span{
+    color: #807e83;
+}
+/* Style Conhecimentos */
+
+section .Conhecimentos{
+    padding-top: 300px;
+    
+}
+.boxexperiencias1 .competencias{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.boxexperiencias2 .competencias{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.Conhecimentos .flex{
+    
+    color: #fff;
+    
+    gap: 40px 4%;  
+}
+
+.Conhecimentos .boxexperiencias1{
+    padding: 50px ;
+    width: 400px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: .2s;
+
+}
+.Conhecimentos .boxexperiencias2{
+    padding: 50px ;
+    width: 400px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: .2s;
+    height: 300px;
+}
+.Conhecimentos .boxexperiencias1 h3{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.Conhecimentos .boxexperiencias1 h3 i{
+    color: #807e83;
+}
+.Conhecimentos .boxexperiencias2 h3{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.Conhecimentos .boxexperiencias2 h3 i{
+    color: #807e83;
+}
+.Conhecimentos .boxexperiencias1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #807e83;
+
+}
+.Conhecimentos .boxexperiencias2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #807e83;
+
+}
+.Conhecimentos .boxexperiencias1 p span{
+    color: #807e83;
+}
+.Conhecimentos h2 {
+    padding-top: 200px;
+}
+/* Projetos */
+h3.titulobox{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    justify-content: center;
+
+}
+section .projetos{
+    padding-top: 300px;
+    
+}
+.projetos .interface{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.projetos .projetos-box{
+    padding: 50px ;
+    width: 200px;
+    height: 700px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: .2s;
+    flex: 1 1 400px; 
+    margin: 10px;
+
+
+}
+.projetos .projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #8b8989;
+}
+.projetos .flex{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    gap: 30px 4%;
+    align-items: center;
+}
+
+.projetos video{
+    height: 450px;
+    width: 250px;
+    margin: auto;
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.textoProjeto{
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.projetos .titulo{
+    margin-top: 200px;
+}
+.projetos .textoProjeto a{
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.projetos .textoProjeto a:hover{
+    color:#8b8989 ;
+    text-decoration:underline; 
+}
+.futurosProjetos{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.futurosProjetos a{ 
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s;
+    
+
+}
+
+/* Style Contato */
+.section .contatos {
+    
+    padding-top: 300px;
+    
+}
+
+section.contatos .flex {
+    color: #fff;
+    gap: 30px 4%; 
+   
+}
+
+section.contatos .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contatos .contatos-box {
+    padding: 50px ;
+    width: 550px;
+    height: 450px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: .2s;
+}
+
+.contatos .contatos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #8b8989;
+}
+.contatos .rede1 i{
+    font-size: 100px;
+    margin-left: 100px;
+    color: #fff;
+    transition: .2s;
+    
+}
+.contatos .rede2 i{
+    font-size: 100px;
+    margin-left: 100px;
+    color: #fff;
+    
+}
+
+.contatos .contatos-box p{
+    font-size: 20px;
+    text-align: center;
+}
+.contatos h2 {
+    padding-top: 200px;
+}
+.contatos h3{
+    text-align: center;
+    font-size: 35px;
+}
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(72, 73, 75);
+    border: 0;
+    outline: 0;
+    padding: 20px 10px;
+    border-radius: 15px;
+    color: #fff;
+    font: 28px;
+    cursor: pointer;
+    text-align: center;
+    width: 350px;
+    margin-left: 80px;
+    margin-top: 30px;
+
+
+}
+
+form textarea {
+    resize: none;
+
+}
+
+form .botaoenviarcontato {
+    margin-top: 10px;
+    margin-left: 110px;
+}
+
+form .botaoenviarcontato input[type=submit] {
+    width: 120px;
+
+}
+/* Style Footer */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px #807e83;
+    margin-top: 100px;
+}
+footer .flex{
+    height: 40px;
+}
+
+.lineFooterb{
+    padding: 20px 0;
+    border-bottom: 2px solid #807e83;
+}
+ footer .botoesRede button{
+
+    font-size: 20px;
+    color: #807e83;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer .lineFooter p i{
+    color: #807e83;
+}
+footer .lineFooter p a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+footer .botoesRede{
+        
+    display: flex;
+    gap: 00px 4%;
+    font-size: 35px;
+    gap: 20px;
+}
+footer .botoesRede a{
+    color: white;
+}
+
+
+
+
+
+
+
+/*  resposivo */
+@media screen and (max-width: 1626px) {
+
+    /* geral */
+    .flex{
+        flex-direction: column;
+    }
+    /* header */
+    .logo-header img{
+        width: 100px;
+ 
+    }
+   .menu-desktop-header,button{
+    display: none;
+   }
+   /* Estilo Menu Mobile */
+   .menuMobile{
+    display: block;
+   }
+   .menuMobile{
+    margin-right: 0px 4%;
+   }
+   
+   
+   /* Topo do site */
+   .TopodoSite .flex{
+    flex-direction: column-reverse;
+    padding: 10px ;
+    padding-bottom: 30px; 
+    align-items: center;
+    text-align: center;
+   }
+   .TopodoSite .flex .imagemTopo img{
+    width: 300px;
+   }
+
+   .TopodoSite .textoTopo{
+    padding-top: 60px;
+   }
+
+   .TopodoSite h1{
+    font-size: 20px;
+   }
+   .TopodoSite h2 span{
+    font-size: 15px;
+   }
+   .TopodoSite .textoTopo p{
+    font-size: 16px;
+   }
+   .TopodoSite h2{
+    font-size: 18px;
+   }
+   .TopodoSite h2 i{
+    color: #807e83;
+   }
+
+   /* Sobre */
+
+    .Sobre .interface{
+        margin-top: 50px;
+   }
+    .Sobre .flex{
+        flex-direction: column;
+        color: #fff;
+        padding-bottom: 30px; 
+        gap: 30px;
+        align-items: center;
+        margin-top: 50px;  
+    }
+    .Sobre .SobreMim-box{
+        padding: 40px 4% ;
+        width: 300px;
+    }
+    .Sobre .SobreMim-box i{
+        color: #807e83;
+    }
+    .Sobre .SobreMim-box h3{
+        text-align: center;
+        padding: 20px 4% 
+    }
+    /* Conhecimentos */
+
+    .Conhecimentos .flex{
+    
+        color: #fff;
+        padding-bottom: 30px; 
+        gap: 40px 4%;  
+  
+    }
+    section .Conhecimentos{
+        margin-top: 50px;
+        
+    }
+    
+    .Conhecimentos .flex{
+        
+        color: #fff;
+        align-items: center;
+        margin-top: 50px;  
+        gap: 40px 4%;  
+    }
+    
+    .Conhecimentos .boxexperiencias1{
+        padding: 50px ;
+        width: 200px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        margin: 20px 0;
+        transition: .2s;
+    
+    }
+    .Conhecimentos .boxexperiencias2{
+        padding: 50px ;
+        width: 200px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        margin: 20px 0;
+        transition: .2s;
+    }
+    .Conhecimentos .boxexperiencias1 h3{
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .Conhecimentos .boxexperiencias1 h3 i{
+        color: #807e83;
+    }
+    .Conhecimentos .boxexperiencias2 h3{
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .Conhecimentos .boxexperiencias2 h3 i{
+        color: #807e83;
+    }
+    .Conhecimentos .boxexperiencias1:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #807e83;
+    
+    }
+    .Conhecimentos .boxexperiencias2:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #807e83;
+    
+    }
+    .Conhecimentos .boxexperiencias1 p span{
+        color: #807e83;
+    }
+    .Conhecimentos h2 {
+        padding-top: 100px;
+    }
+    /* Portfolio */
+    .projetos video{
+        height: 350px;
+        width: 200px;
+        margin: auto;
+        border-radius: 20px;
+        border: 3px solid white;
+        margin-top: 20px;
+    }
+
+    .textoProjeto{
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .projetos .titulo{
+        margin-top: 50px;
+    }
+    .projetos .textoProjeto a{
+        color: white;
+        text-decoration: none; 
+        transition: color 0.3s;
+    }
+    .futurosProjetos{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .futurosProjetos a{ 
+        color: white;
+        text-decoration: none; 
+        transition: color 0.3s;
+        
+
+    }
+    .futurosProjetos a:hover{
+        color:#8b8989 ;
+        text-decoration:underline; 
+    }
+    
+    .projetos .textoProjeto a:hover{
+        color:#8b8989 ;
+        text-decoration:underline; 
+    }
+    /* Contatos */
+    .section .contatos {
+    
+        padding-top: 200px;
+        
+    }
+    
+    section.contatos .flex {
+        color: #fff;
+        gap: 30px 4%; 
+       
+    }
+    
+    section.contatos .interface {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .contatos .contatos-box {
+        padding: 50px ;
+        width: 250px;
+        height: 350px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        margin: 20px 0;
+        transition: .2s;
+    }
+    
+    .contatos .contatos-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 8px #8b8989;
+    }
+    .contatos .rede1 i{
+        
+        font-size: 45px;
+        margin-left: 50px;
+        color: #fff;
+        transition: .2s;
+        
+    }
+    .contatos .rede2 i{
+        font-size: 45px;
+        margin-left: 50px;
+        color: #fff;
+        
+    }
+    
+    .contatos .contatos-box p{
+        margin-top: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .contatos h2 {
+        padding-top: 100px;
+    }
+    .contatos h3{
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .contatos .formulario{
+        align-items: center;
+
+    }
+
+    .contatos .formulario input {
+        width: 230px;
+        margin: 5px;
+       
+        
+
+    }
+    .contatos .formulario textarea {
+        width: 230px;
+        margin: 0;
+        margin: 5px;
+     }
+    
+  
+    
+    form .botaoenviarcontato {
+        margin-top: 5px;
+        margin-left: 70px;
+    
+    }
+    form .botaoenviarcontato input[value=Enviar]{
+        padding-top: -25px;
+    }
+    
+    form .botaoenviarcontato input[type=submit] {
+        width: 110px;
+        height: 50px;
+    }
+
+    /* Footer */
+    footer .flex{
+        height: 50px;
+    }
+  
+    footer .botoesRede{
+        
+        display: flex;
+        gap: 40px 4%;
+        font-size: 25px;
+    }
+    footer .botoesRede a{
+        color: white;
+    }
+
+
+}
+
+
+
